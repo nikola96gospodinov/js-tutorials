@@ -17,7 +17,24 @@ const str2 = "   Hello World   ";
 
 // 1.7 Remove the whitespace from the beginning and end of the string
 
+// ------------------------------------------------------------
+
 // Exercise 2
+
+const text =
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+
+// 2.1 Split the text into an array of sentences
+
+// 2.2 Count the number of sentences in the text
+
+// 2.3 How many sentences contain the phrase "Lorem Ipsum"?
+
+// 2.4 Replace all occurrences of "Lorem Ipsum" with "Ipsum Lorem"
+
+// ------------------------------------------------------------
+
+// Exercise 3
 
 const emails = [
   "john.doe@gmail.com",
@@ -28,8 +45,8 @@ const emails = [
   "taylor_swift_sucks@gmail.com",
 ];
 
-// 2.1 Create usernames for each email. The username is the first part of the email before the @ symbol
+// 3.1 Create usernames for each email. The username is the first part of the email before the @ symbol
 
-// 2.2 Join the usernames with a comma
+// 3.2 Join the usernames with a comma
 
-// 2.3 Create a function that takes a username and returns a string that says "Welcome, [username]!"
+// 3.3 Create a function that takes a username and returns a string that says "Welcome, [username]!"
