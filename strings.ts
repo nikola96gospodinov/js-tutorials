@@ -50,3 +50,19 @@ const emails = [
 // 3.2 Join the usernames with a comma
 
 // 3.3 Create a function that takes a username and returns a string that says "Welcome, [username]!"
+
+// ---------------------------------------
+
+// Q&A
+
+// 1. Which property is used to access the length of a string? (same property is used to determine the number of elements in an array)
+
+// 2. What is the difference between replace() and replaceAll()?
+
+// 3. Which method is used to remove whitespace from the beginning and end of a string?
+
+// 4. What is the difference between split() and join()?
+
+// 5. What is the result of calling split() on a string?
+
+// 6. What does the content of the string passed to split() determine?
