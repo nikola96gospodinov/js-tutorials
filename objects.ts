@@ -165,3 +165,26 @@ const benchPressSets = [
 // 4.10 Using produce from immer, generate a new title based on the muscle groups. For example, if the muscle groups are ["chest", "triceps"], the new title should be "Chest, Triceps Workout"
 
 // 4.11 Using produce from immer, add a new property called totalWeight to the workout object. This should be the sum of all the weights in the sets array
+
+// ---------------------------------------
+
+// Exercise 5
+
+const animal = {
+  name: "Lion",
+  age: 5,
+  type: "Mammal",
+  habitat: "Savannah",
+  diet: ["meat", "fish"],
+  isEndangered: false,
+  location: {
+    latitude: 19.0208,
+    longitude: 21.4584,
+  },
+};
+
+// 5.1 Using destructuring, grab the name and age properties from the animal object
+
+// 5.2 Using destructuring, grab the latitude and longitude properties from the animal object
+
+// 5.3 Using destructuring, grab the first element from the diet array
