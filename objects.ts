@@ -21,12 +21,6 @@ export const userInfo = {
 // ---------------------------------------
 
 // Exercise 2
-
-// 2.1 Perform the same operations as in Exercise 1 on the userInfo object, without mutating the original object
-
-// ---------------------------------------
-
-// Exercise 3
 const address = {
   street: "123 Main St",
   city: "London",
@@ -38,14 +32,14 @@ const address = {
   },
 };
 
-// 3.1 Change the latitude property of the address object to 30.3123 without mutating the original object
+// 2.1 Change the latitude property of the address object to 30.3123 without mutating the original object
 
-// 3.2 Add an attractions property to the address object of type string by joining the attractions array with a comma and a space
+// 2.2 Add an attractions property to the address object of type string by joining the attractions array with a comma and a space
 const attractions = ["Big Ben", "London Eye", "Buckingham Palace"];
 
-// 3.3 Add a new property called "airports" to the address object that is an array of strings with the values "Heathrow", "Gatwick" and "London City"
+// 2.3 Add a new property called "airports" to the address object that is an array of strings with the values "Heathrow", "Gatwick" and "London City"
 
-// 3.4 Remove the second airport from the airports array without mutating the original object
+// 2.4 Remove the second airport from the airports array without mutating the original object
 
 // ---------------------------------------
 
@@ -63,7 +57,7 @@ type User = {
   isActive?: boolean;
 };
 
-// Exercise 4
+// Exercise 3
 const user: User = {
   name: "John",
   age: 30,
@@ -82,10 +76,87 @@ const user: User = {
   ],
 };
 
-// 4.1 Using produce from immer, add a new friend to the user object
+// 3.1 Using produce from immer, add a new friend to the user object
 
-// 4.2 Using produce from immer, remove the second interest from the user object
+// 3.2 Using produce from immer, remove the second interest from the user object
 
-// 4.3 Using produce from immer, remove the age property from the user object
+// 3.3 Using produce from immer, remove the age property from the user object
 
-// 4.4 Using produce from immer, add a new property to the user object called "isActive" and set it to true
+// 3.4 Using produce from immer, add a new property to the user object called "isActive" and set it to true
+
+// ---------------------------------------
+
+// Exercise 4
+
+type Workout = {
+  id: string;
+  title: string;
+  description?: string;
+  duration?: number;
+  muscleGroups: string[];
+  equipment: string[];
+  exercises: {
+    id: string;
+    title: string;
+    description?: string;
+    sets: {
+      id: string;
+      reps: number;
+      weight: number;
+      isDone: boolean;
+    }[];
+  }[];
+};
+
+const workout: Workout = {
+  id: "1",
+  title: "Morning Workout",
+  muscleGroups: ["chest", "triceps"],
+  equipment: ["barbell", "dumbbell", "bodyweight"],
+  duration: 60,
+  exercises: [],
+};
+
+// 4.1 Using produce from immer, add benchPressExercise as exercise to the workout object
+const benchPressExercise = {
+  id: "2",
+  title: "Bench Press",
+  description: "A basic exercise to strengthen the chest",
+  sets: [],
+};
+
+// 4.2 Using produce from immer, add the bench press sets to the bench press exercise
+const benchPressSets = [
+  {
+    id: "1",
+    reps: 12,
+    weight: 40,
+    isDone: true,
+  },
+  {
+    id: "2",
+    reps: 10,
+    weight: 50,
+    isDone: true,
+  },
+  {
+    id: "3",
+    reps: 8,
+    weight: 60,
+    isDone: false,
+  },
+];
+
+// 4.3 Using produce from immer, remove the duration property from the workout object
+
+// 4.4 Using produce from immer, add a description property to the workout object
+
+// 4.5 Using produce from immer, add a new muscle group to the workout object
+
+// 4.6 Using produce from immer, remove "bodyweight" from the equipment array
+
+// 4.7 Using produce from immer, add a new exercise to the workout object
+
+// 4.8 Using produce from immer, add a few sets to the new exercise
+
+// 4.9 Using produce from immer, remove all sets that have isDone set to false
