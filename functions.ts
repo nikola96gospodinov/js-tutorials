@@ -22,9 +22,10 @@ const number = 5;
 
 // 2.2 Call the function with the people array and store the result in a variable called fullNames
 export const people = [
-  { firstName: "John", lastName: "Doe" },
-  { firstName: "Jane", lastName: "Smith" },
-  { firstName: "Emily", lastName: "Johnson" },
+  { firstName: "Justin", lastName: "Bieber" },
+  { firstName: "David", lastName: "Beckham" },
+  { firstName: "Ariana", lastName: "Grande" },
+  { firstName: "Michael", lastName: "Jordan" },
 ];
 
 // 2.3 Create a function that takes a parameter of type array of strings and returns a new array with all the strings in the original array that start with the letter "a"
@@ -38,3 +39,5 @@ export const persons = [
   { name: "Michael", age: 40 },
   { name: "Jessica", age: 28 },
 ];
+
+// 2.5 Create a function that takes two parameters. 1) parameter of type array of objects with name and age properties and 2) parameter of type number. The function should return a new array with all the objects in the original array that have an age greater than the number passed in
