@@ -1,3 +1,5 @@
+import { produce } from "immer";
+
 // Exercise 1
 export const userInfo = {
   firstName: "Justin",
@@ -47,8 +49,22 @@ const attractions = ["Big Ben", "London Eye", "Buckingham Palace"];
 
 // ---------------------------------------
 
+type User = {
+  name: string;
+  age?: number;
+  address: {
+    street: string;
+    city: string;
+  };
+  interests: string[];
+  friends: {
+    name: string;
+  }[];
+  isActive?: boolean;
+};
+
 // Exercise 4
-const user = {
+const user: User = {
   name: "John",
   age: 30,
   address: {
