@@ -106,6 +106,7 @@ type Workout = {
       isDone: boolean;
     }[];
   }[];
+  totalWeight?: number;
 };
 
 const workout: Workout = {
@@ -160,3 +161,7 @@ const benchPressSets = [
 // 4.8 Using produce from immer, add a few sets to the new exercise
 
 // 4.9 Using produce from immer, remove all sets that have isDone set to false
+
+// 4.10 Using produce from immer, generate a new title based on the muscle groups. For example, if the muscle groups are ["chest", "triceps"], the new title should be "Chest, Triceps Workout"
+
+// 4.11 Using produce from immer, add a new property called totalWeight to the workout object. This should be the sum of all the weights in the sets array
