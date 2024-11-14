@@ -88,6 +88,18 @@ const user: User = {
 
 // Exercise 4
 
+type Exercise = {
+  id: string;
+  title: string;
+  description?: string;
+  sets: {
+    id: string;
+    reps: number;
+    weight: number;
+    isDone: boolean;
+  }[];
+};
+
 type Workout = {
   id: string;
   title: string;
@@ -95,17 +107,7 @@ type Workout = {
   duration?: number;
   muscleGroups: string[];
   equipment: string[];
-  exercises: {
-    id: string;
-    title: string;
-    description?: string;
-    sets: {
-      id: string;
-      reps: number;
-      weight: number;
-      isDone: boolean;
-    }[];
-  }[];
+  exercises: Exercise[];
   totalWeight?: number;
 };
 
@@ -119,7 +121,7 @@ const workout: Workout = {
 };
 
 // 4.1 Using produce from immer, add benchPressExercise as exercise to the workout object
-const benchPressExercise = {
+const benchPressExercise: Exercise = {
   id: "2",
   title: "Bench Press",
   description: "A basic exercise to strengthen the chest",
