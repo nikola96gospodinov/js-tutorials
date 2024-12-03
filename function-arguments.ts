@@ -91,19 +91,6 @@ greetOptional4({ firstName: "John", lastName: "Doe" }); // 👌 No problem
 greetOptional4({ firstName: "John", lastName: "Doe", age: 30 }); // 👌 No problem
 greetOptional4({ lastName: "Doe", firstName: "John", age: 30 }); // 👌 No problem
 
-// Directly destructuring the arguments in the function parameters is the best way to go, because it's more readable and it's easier to change the order of the arguments
-const greetOptional5 = ({ lastName, age, firstName }: GreetOptional2Props) => {
-  if (!age) {
-    return `Hello ${firstName} ${lastName}`;
-  }
-
-  return `Hello ${firstName} ${lastName}, you are ${age} years old`;
-};
-
-greetOptional5({ firstName: "John", lastName: "Doe" }); // 👌 No problem
-greetOptional5({ firstName: "John", lastName: "Doe", age: 30 }); // 👌 No problem
-greetOptional5({ lastName: "Doe", firstName: "John", age: 30 }); // 👌 No problem
-
 // Positional arguments are useful when we have one or two arguments that are obvious and the order of the arguments can be easily remembered or reversed without causing a different result
 const add = (a: number, b: number) => {
   return a + b;
