@@ -41,3 +41,69 @@ export const persons = [
 ];
 
 // 2.5 Create a function that takes two parameters. 1) parameter of type array of objects with name and age properties and 2) parameter of type number. The function should return a new array with all the objects in the original array that have an age greater than the number passed in
+
+// ---------------------------------------
+
+// Exercise 3
+
+const items = [
+  {
+    name: "apple",
+    price: 1,
+    quantity: 75,
+    isOnSale: false,
+  },
+  {
+    name: "banana",
+    price: 0.5,
+    quantity: 45,
+    isOnSale: true,
+  },
+  {
+    name: "orange",
+    price: 0.75,
+    quantity: 10,
+    isOnSale: true,
+  },
+  {
+    name: "pear",
+    price: 1.25,
+    quantity: 20,
+    isOnSale: false,
+  },
+  {
+    name: "watermelon",
+    price: 5,
+    quantity: 3,
+    isOnSale: true,
+  },
+  {
+    name: "pineapple",
+    price: 3.5,
+    quantity: 15,
+    isOnSale: false,
+  },
+  {
+    name: "strawberry",
+    price: 2.5,
+    quantity: 25,
+    isOnSale: false,
+  },
+];
+
+// 3.1 Create a function that takes an argument of type array of objects with name, price, quantity, and isOnSale properties and returns a new array with all the objects in the original array that are on sale
+
+// 3.2 Create a function that takes two arguments:
+//   - first argument of type array of objects with name, price, quantity, and isOnSale properties
+//   - second argument is quantity
+// The function should return a new array with all the objects in the original array that have a quantity lower than the quantity passed in
+
+// 3.3 Create a function that takes two arguments:
+//   - first argument of type array of objects with name, price, quantity, and isOnSale properties
+//   - second argument is a string of either "desc" or "asc"
+// The function should return a new array with all the objects in the original array sorted by the price property in ascending or descending order depending on the value of the second argument
+
+// 3.4 Create a function that takes two arguments:
+//   - first argument of type array of objects with name, price, quantity, and isOnSale properties
+//   - second argument is price
+// The function should return a new array with all the objects in the original array with a price greater than the price passed. This should only apply for items that aren't on sale
