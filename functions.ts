@@ -107,3 +107,50 @@ const items = [
 //   - first argument of type array of objects with name, price, quantity, and isOnSale properties
 //   - second argument is price
 // The function should return a new array with all the objects in the original array with a price greater than the price passed. This should only apply for items that aren't on sale
+
+// ---------------------------------------
+
+// Exercise 4
+const users = [
+  {
+    id: 1,
+    name: "John",
+    email: "john@example.com",
+    isActive: true,
+    tags: ["admin", "user"],
+  },
+  {
+    id: 2,
+    name: "Jane",
+    email: "jane@example.com",
+    isActive: false,
+    tags: ["user"],
+  },
+  {
+    id: 3,
+    name: "Bob",
+    email: "bob@example.com",
+    isActive: true,
+    tags: ["user", "moderator"],
+  },
+  {
+    id: 4,
+    name: "Alice",
+    email: "alice@example.com",
+    isActive: true,
+    tags: ["user"],
+  },
+];
+
+// 4.1 Create a function that takes the users array and returns an array of all unique tags across all users
+// Example: ["admin", "user", "moderator"]
+
+// 4.2 Create a function that takes the users array and a tag string, and returns an array of user names who have that tag
+// Example: "admin" -> ["John"]
+
+// 4.3 Create a function that takes the users array and returns an object with two properties:
+// - active: array of active users
+// - inactive: array of inactive users
+// Example: { active: [{...}, {...}], inactive: [{...}] }
+
+// 4.4 Create a function that takes the users array and an a new tag string that doesn't exist in the users array and adds it to all inactive users
