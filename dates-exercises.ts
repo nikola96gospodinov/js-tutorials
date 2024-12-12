@@ -60,7 +60,7 @@ const eventDates = {
 // - "endDate"
 // - "eventName"
 // and returns an object with the following properties
-// - "startDate" formatted as "December 12th, 2024"
-// - "endDate" formatted as "December 15th, 2024"
-// - "duration" formatted as "3 days"
+// - "startDate" formatted as "March 15th, 2025"
+// - "endDate" formatted as "May 22nd, 2025"
+// - "duration" formatted as "2 months"
 // - "eventName" as "React Conference"
