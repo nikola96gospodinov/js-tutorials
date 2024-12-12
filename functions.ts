@@ -154,3 +154,27 @@ const users = [
 // Example: { active: [{...}, {...}], inactive: [{...}] }
 
 // 4.4 Create a function that takes the users array and an a new tag string that doesn't exist in the users array and adds it to all inactive users
+
+// ---------------------------------------
+
+// Exercise 5
+
+const user = {
+  name: "John",
+  age: 30,
+  email: "john@example.com",
+  isActive: true,
+  tags: ["admin", "user"],
+};
+
+// 5.1 Create a function that takes an object of type user and returns the object with the age property incremented by 1
+
+// 5.2 Create a function that takes two arguments:
+// - first argument of type user
+// - second argument is a string of either "moderator" or "maintainer"
+// The function should return the object with the tags property updated to include the new tag
+
+// 5.3 Create a function that takes three arguments:
+// - first argument of type user
+// - second argument is a string that holds the user's new email
+// The function should return the object with the updated email property only if the isActive property is true
